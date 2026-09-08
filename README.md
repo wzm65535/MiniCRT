@@ -6,7 +6,7 @@
 
 ## 📄 License & Attribution
 
-本项目采用 **WTFPL-C (Do What The Fuck You Want To - Credit & Disclaimer Version)** 协议。
+本项目采用 **WTFPL变体** 协议。
 
 简单来说：**你想怎么用都行，但必须做到以下两点：**
 1. **免责**：本软件按“原样”提供，不提供任何担保，使用风险自负。
