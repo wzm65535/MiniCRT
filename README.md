@@ -4,7 +4,7 @@
 
 
 
-## ? License & Attribution
+## License & Attribution
 
 本项目采用 **WTFPL变体** 协议。
 
