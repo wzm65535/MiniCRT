@@ -26,7 +26,12 @@ int main()
     //复读机(最高1024字节,不能读空格)
     char text[1024];
     printf("我是复读机(最高1024字节,不能读空格):");
-    scanf("%s",text);
+    unsigned int a=scanf("%s",&text);
     printf("复读:%s\r\n",text);
-
+    printf("读到了%d个变量\r\n",a);
+    //复读年月日
+    unsigned int year,month,day;
+    printf("请输入年月日(比如1145-14-19):");
+    scanf("%d%*c%d%*c%d%*c",&year,&month,&day);
+    printf("%d-%d-%d",year,month,day);
 }
