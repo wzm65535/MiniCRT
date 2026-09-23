@@ -30,7 +30,17 @@ int main()
 
             case 1:
             system("cls");
-            printf("String tests\r\n");
+            printf("String tests\r\n");  //字符计数
+            printf("请输入文本:");
+            int c;  //读到的字符
+            while(((c = getchar()) != EOF)&&(c != '\n'));  //吃掉之前scanf留下的'\n'
+            unsigned int score = 0;  //字符数量
+            while(((c = getchar()) != EOF)&&(c != '\n'))   //识别并计数
+            {
+                score++;
+            }
+            printf("\r\n");
+            printf("总共有%u个字符\r\n",score);
             break;
 
             case 2:
