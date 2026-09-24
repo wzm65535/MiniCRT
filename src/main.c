@@ -9,6 +9,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "C:Users\Tata\Desktop\MiniCRT\include\config.h"
 
 int main()
@@ -22,31 +23,39 @@ int main()
         printf("2.Memory tests\r\n");
         printf("请选择(输入数字):");
         unsigned int choose;
-        scanf("%d",&choose);
-        switch(choose)
+        scanf("%u",&choose);
+        if((choose <= 2)&&(choose >= 0))  //判断输入内容是否正确
         {
-            case 0:
-            return 0;
-
-            case 1:
-            system("cls");
-            printf("String tests\r\n");  //字符计数
-            printf("请输入文本:");
-            int c;  //读到的字符
-            while(((c = getchar()) != EOF)&&(c != '\n'));  //吃掉之前scanf留下的'\n'
-            unsigned int score = 0;  //字符数量
-            while(((c = getchar()) != EOF)&&(c != '\n'))   //识别并计数
+            switch(choose)
             {
-                score++;
-            }
-            printf("\r\n");
-            printf("总共有%u个字符\r\n",score);
-            break;
+                case 0:
+                return 0;
 
-            case 2:
+                case 1:
+                system("cls");
+                printf("String tests\r\n");  //字符计数
+                printf("请输入文本:");
+                int c;  //读到的字符
+                while(((c = getchar()) != EOF)&&(c != '\n'));  //吃掉之前scanf留下的'\n'
+                unsigned int score = 0;  //字符数量
+                while(((c = getchar()) != EOF)&&(c != '\n'))   //识别并计数
+                {
+                    score++;
+                }
+                printf("\r\n");
+                printf("总共有%u个字符\r\n",score);
+                break;
+
+                case 2:
+                system("cls");
+                printf("Memory tests\r\n");
+                break;            
+            }
+        }
+        else  //输入内容错误
+        {
             system("cls");
-            printf("Memory tests\r\n");
-            break;            
+            printf("写的什么玩意,重写!\r\n");
         }
     }    
 }
