@@ -1,5 +1,5 @@
 //版本号
-#define version "v0.2.0"
+#define version "v0.2.1"
 //指令集
 #define commands "\r\n\
 指令集:\r\n\
