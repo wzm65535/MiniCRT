@@ -1,5 +1,5 @@
 /*
- * MiniCRT - 迷你C基础库
+ * MiniCRT —— 一个以 DOS/CMD 风格 Shell 为交互入口、通过持续迭代学习 C 语言的工程实践项目
  * Copyright (C) 2026 wzm65535 <https://github.com/wzm65535>
  *
  * 本项目采用 WTFPL变体协议 开源。
@@ -8,54 +8,43 @@
  */
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include "C:Users\Tata\Desktop\MiniCRT\include\config.h"
+#include <string.h>
+#include <windows.h>
+#include "../include/config.h"
+#include "../include/shell/shell.h"
 
 int main()
 {
+    printf("MiniCRT Shell[%s]\r\n",version);
     while(1)
     {
-        printf("MiniCRT %s\r\n",version);
-        printf("MiniCRT Tests Runner\r\n");
-        printf("0.exit\r\n");
-        printf("1.String tests\r\n");
-        printf("2.Memory tests\r\n");
-        printf("请选择(输入数字):");
-        unsigned int choose;
-        scanf("%u",&choose);
-        if((choose <= 2)&&(choose >= 0))  //判断输入内容是否正确
+        printf(">");
+        char command[32];
+        scanf("%s",&command);
+        if(strcmp(command,"help") == 0) //帮助
         {
-            switch(choose)
-            {
-                case 0:
-                return 0;
-
-                case 1:
-                system("cls");
-                printf("String tests\r\n");  //字符计数
-                printf("请输入文本:");
-                int c;  //读到的字符
-                while(((c = getchar()) != EOF)&&(c != '\n'));  //吃掉之前scanf留下的'\n'
-                unsigned int score = 0;  //字符数量
-                while(((c = getchar()) != EOF)&&(c != '\n'))   //识别并计数
-                {
-                    score++;
-                }
-                printf("\r\n");
-                printf("总共有%u个字符\r\n",score);
-                break;
-
-                case 2:
-                system("cls");
-                printf("Memory tests\r\n");
-                break;            
-            }
+            printf("\r\n");
+            printf("%s\r\n",commands);
         }
-        else  //输入内容错误
+        else if(strcmp(command,"ver") == 0) //输出版本号
+        {
+            printf("MiniCRT Shell[%s]\r\n",version);
+            printf("Copyright (C) 2026 wzm65535 保留所有权利\r\n");
+        }
+        else if(strcmp(command,"cls") == 0) //清屏
         {
             system("cls");
-            printf("写的什么玩意,重写!\r\n");
+            printf("MiniCRT Shell[%s]\r\n",version);            
         }
-    }    
+        else if(strcmp(command,"echo") == 0) //输出字符串(最高1145字符)
+        {
+            char text[1145];
+            scanf("%s",&text);
+            printf("%s\r\n",text);
+        }
+        else if(strcmp(command,"exit") == 0) //退出程序
+        {
+            return 0;
+        }
+    }
 }
