@@ -30,6 +30,7 @@ int main()
         {
             printf("MiniCRT Shell[%s]\r\n",version);
             printf("Copyright (C) 2026 wzm65535 保留所有权利\r\n");
+            printf("\r\n");
         }
         else if(strcmp(command,"cls") == 0) //清屏
         {
@@ -45,6 +46,14 @@ int main()
         else if(strcmp(command,"exit") == 0) //退出程序
         {
             return 0;
+        }
+        else if(strcmp(command,"type") == 0) //显示各种变量类型大小
+        {
+            type();
+        }
+        else if(strcmp(command,"calc") == 0) //求操作数的五则运算值
+        {
+            calc();
         }
     }
 }
