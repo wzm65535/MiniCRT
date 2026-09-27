@@ -1,5 +1,5 @@
 //版本号
-#define version "v0.2.2"
+#define version "v0.2.3"
 //指令集
 #define commands "\r\n\
 指令集:\r\n\
@@ -11,6 +11,7 @@ exit   退出程序\r\n\
 type   显示各种变量类型大小\r\n\
 calc   求操作数的五则运算值\r\n\
 guess  猜数字游戏\r\n\
+start  显示启动界面\r\n\
 "
 
 

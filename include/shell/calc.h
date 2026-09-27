@@ -1,3 +1,4 @@
+//对操作数ab进行五则运算
 #include <stdio.h>
 
 int calc()

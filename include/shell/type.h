@@ -1,3 +1,4 @@
+//打印各种类型所占大小
 #include <stdio.h>
 
 int type()

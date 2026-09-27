@@ -11,11 +11,12 @@
 #include <string.h>
 #include <windows.h>
 #include "../include/config.h"
+#include "../include/start.h"
 #include "../include/shell/shell.h"
 
 int main()
 {
-    printf("MiniCRT Shell[%s]\r\n",version);
+    start(); //播放启动动画
     while(1)
     {
         printf(">");
@@ -58,6 +59,10 @@ int main()
         else if(strcmp(command,"guess") == 0) //猜数字游戏
         {
             guess();
+        }
+        else if(strcmp(command,"start") == 0) //显示启动界面
+        {
+            start();
         }
         else
         {
