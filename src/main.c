@@ -55,6 +55,10 @@ int main()
         {
             calc();
         }
+        else if(strcmp(command,"guess") == 0) //猜数字游戏
+        {
+            guess();
+        }
         else
         {
             printf("输入错误!输入help指令以查看指令集\r\n\r\n");
