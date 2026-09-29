@@ -1,4 +1,4 @@
-//演?多个字符从两端移动，向中间汇聚
+//演示多个字符从两端移动，向中间汇聚
 #include <stdio.h>
 #include <windows.h>
 

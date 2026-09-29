@@ -1,3 +1,4 @@
+//打印各种变量类型占多少字节
 #include <stdio.h>
 #include <stddef.h>
 

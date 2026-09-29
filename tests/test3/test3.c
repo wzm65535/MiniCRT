@@ -1,3 +1,4 @@
+//printfÕ¼Î»·û²âÊÔ
 #include <stdio.h>
 
 int main()
