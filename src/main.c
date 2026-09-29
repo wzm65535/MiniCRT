@@ -64,6 +64,10 @@ int main()
         {
             start();
         }
+        else if(strcmp(command,"stats") == 0)
+        {
+            stats();
+        }
         else
         {
             printf("输入错误!输入help指令以查看指令集\r\n\r\n");
