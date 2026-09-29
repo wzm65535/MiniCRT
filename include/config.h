@@ -7,7 +7,7 @@
  * 详细条款见项目根目录 LICENSE 文件。
  */
 //版本号
-#define version "v0.2.3"
+#define version "v0.2.4"
 //指令集
 #define commands "\r\n\
 指令集:\r\n\
