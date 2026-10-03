@@ -6,20 +6,20 @@
  * 允许随意使用、修改、商用，但必须保留此版权声明及署名。
  * 详细条款见项目根目录 LICENSE 文件。
  */
-//对输入的数字进行均值,求和,最大值,最小值
+//对输入的正数进行均值,求和,最大值,最小值
 #include <stdio.h>
 #include <windows.h>
 
-int arr[5]; 
-int sum = 0; //五个数字的和
-int avarage = 0; //五个数字的均值
-int max = 0; //五个数字的最大值
-int min = 0; //五个数字的最小值
+int arr[4]; 
+int sum = 0; //五个正数的和
+int avarage = 0; //五个正数的均值
+int max = 0; //五个正数的最大值
+int min = 0; //五个正数的最小值
 int temp; //排序过程中调换数组中项的临时变量
 
 int stats()
 {
-    printf("请输入5个数字:\r\n");
+    printf("请输入5个正数:\r\n");
     for(unsigned char i = 0;i < 5;i++)
     {
         scanf("%d",&arr[i]);
@@ -43,10 +43,10 @@ int stats()
                 arr[i+1] = temp;
             } 
         }
-    }       
+    }         
     //计算并打印各项值
     min = arr[0]; //最小值
-    max = arr[5]; //最大值
+    max = arr[4]; //最大值
     printf("sum:%d\r\n",sum);
     printf("avarage:%d\r\n",avarage);
     printf("min:%d\r\n",min);
