@@ -11,3 +11,4 @@
 #include "calc.h"
 #include "guess.h"
 #include "stats.h"
+#include "matrix.h"

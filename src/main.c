@@ -68,6 +68,10 @@ int main()
         {
             stats();
         }
+        else if(strcmp(command,"matrix") == 0)
+        {
+            matrix();
+        }
         else
         {
             printf("输入错误!输入help指令以查看指令集\r\n\r\n");

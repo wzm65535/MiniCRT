@@ -7,7 +7,7 @@
  * 详细条款见项目根目录 LICENSE 文件。
  */
 //版本号
-#define version "v0.2.4"
+#define version "v0.2.5"
 //指令集
 #define commands "\r\n\
 指令集:\r\n\
@@ -21,6 +21,7 @@ calc   求操作数的五则运算值\r\n\
 guess  猜数字游戏\r\n\
 start  显示启动界面\r\n\
 stats  对输入5个数字进行均值,求和,最大值,最小值\r\n\
+matrix 输出一个矩阵,并对其进行行列处理,求和,转置操作\r\n\
 "
 
 
