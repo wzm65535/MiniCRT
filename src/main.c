@@ -10,9 +10,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <windows.h>
-#include "../include/config.h"
-#include "../include/start.h"
-#include "../include/shell/shell.h"
+#include "../include/config.h"       //配置文件
+#include "../include/start.h"        //启动动画
+#include "../include/shell/shell.h"  //指令包装文件
+#include "../include/game/game.h"    //游戏包装文件
 
 int main()
 {

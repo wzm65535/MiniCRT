@@ -33,7 +33,7 @@ int guess()
           //  num--; //机会减一
             if(guess == c) //胜利
             {
-                printf("你赢了!总共猜了%d次\r\n\r\n",(g_num-num));
+                printf("你赢了!总共猜了%d次\r\n\r\n",(g_num-num+1));
                 return 0;
             }
             else if(guess < c) //猜小了
