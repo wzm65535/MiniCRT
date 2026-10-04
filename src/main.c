@@ -6,6 +6,7 @@
  * 允许随意使用、修改、商用，但必须保留此版权声明及署名。
  * 详细条款见项目根目录 LICENSE 文件。
  */
+//主文件
 
 #include <stdio.h>
 #include <string.h>
@@ -30,14 +31,14 @@ int main()
         }
         else if(strcmp(command,"ver") == 0) //输出版本号
         {
-            printf("MiniCRT Shell[%s]\r\n",version);
+            printf("MiniCRT Shell [%s]\r\n",version);
             printf("Copyright (C) 2026 wzm65535 保留所有权利\r\n");
             printf("\r\n");
         }
         else if(strcmp(command,"cls") == 0) //清屏
         {
             system("cls");
-            printf("MiniCRT Shell[%s]\r\n",version);            
+            printf("MiniCRT Shell [%s] by:wzm65535\r\n",version);            
         }
         else if(strcmp(command,"echo") == 0) //输出字符串(最高1145字符)
         {
@@ -57,23 +58,23 @@ int main()
         {
             calc();
         }
-        else if(strcmp(command,"guess") == 0) //猜数字游戏
+        else if(strcmp(command,"game") == 0) //游戏
         {
-            guess();
+            game();
         }
         else if(strcmp(command,"start") == 0) //显示启动界面
         {
             start();
         }
-        else if(strcmp(command,"stats") == 0)
+        else if(strcmp(command,"stats") == 0) //对输入5个正数进行均值,求和,最大值,最小值
         {
             stats();
         }
-        else if(strcmp(command,"matrix") == 0)
+        else if(strcmp(command,"matrix") == 0) //输出一个矩阵,并对其进行行列处理,求和,转置操作
         {
             matrix();
         }
-        else
+        else //查不到
         {
             printf("输入错误!输入help指令以查看指令集\r\n\r\n");
         }
