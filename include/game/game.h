@@ -11,20 +11,24 @@
 #include "minesweeper.h"      //扫雷
 #include <windows.h>
 
-void game()
+int game()
 {
     system("cls");  //清屏
     game:
     printf("====games====\r\n");
+    printf("0.exit\r\n");
     printf("1.guess\r\n");
     printf("2.minesweeper\r\n");
-    printf("请选择游戏:");
+    printf("请选择:");
 
     static char choose;
     scanf("%*c%c",&choose);  //用户选择游戏
     printf("\r\n");
     switch(choose)
     {
+        case '0':
+        return 0;   //退出
+        break;
         case '1':   
         guess();    //猜数字游戏
         break;
