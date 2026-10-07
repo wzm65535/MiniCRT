@@ -8,7 +8,7 @@
  */
 /*=============配置文件=============*/
 //版本号
-#define version "v0.2.5"
+#define version "v0.2.6"
 //指令集
 #define commands "\r\n\
 指令集:\r\n\
