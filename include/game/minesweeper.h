@@ -39,6 +39,9 @@ static char find_x = 0;             //排雷过程中,用户输入的x坐标
 static char find_y = 0;             //排雷过程中,用户输入的y坐标
 static int ground_num = 0;          //在遍历周围9格的时候发现的雷数
 static unsigned char check = 0;     //用于检查雷是否全部排完
+
+time_t second = 0;   //用户排雷用的秒数
+time_t newsec = 0;   //统计耗时的时候用来获取最新秒数
 /*
 棋盘规划:
 mine:                       show:
@@ -168,6 +171,7 @@ void Print_Board()
 
 int FindMine()
 {
+    second = time(NULL);  //开始计时
     while(1)
     {
         aaa:
@@ -188,6 +192,10 @@ int FindMine()
                 }
                 printf("\r\n");
             }
+            //统计耗时
+            newsec = time(NULL);
+            second = newsec - second;  
+            printf("花费了%d秒\r\n");
             return 0;  //退出程序
         }
         else if(mine[find_x][find_y] == '0')  //如果位置不是雷,就显示周围有?个雷
@@ -211,6 +219,10 @@ int FindMine()
         if(check == ((high * wide) - Mine_Num))  //如果排查后所有点位通过(用户找到所有非雷)
         {
             printf("你赢了!\r\n"); 
+            //统计耗时
+            newsec = time(NULL);
+            second = newsec - second; 
+            printf("花费了%d秒\r\n");
             return 0;   //退出
         }
     }
