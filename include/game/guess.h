@@ -3,7 +3,7 @@
  * Copyright (C) 2026 wzm65535 <https://github.com/wzm65535>
  *
  * 本项目采用 WTFPL变体协议 开源。
- * 允许随意使用、修改、商用，但必须保留此版权声明及署名。
+ * 允许随意使用、修改、商用,但必须保留此版权声明及署名。
  * 详细条款见项目根目录 LICENSE 文件。
  */
 //猜数字游戏
@@ -13,7 +13,7 @@
 
 int guess()
 {
-    int a,b,c,num,guess,g_num; //数字范围a,b,生成的随机数c,num为猜测次数,guess用户猜测数字,g_num为猜测次数，第一次赋值后不变
+    int a,b,c,num,guess,g_num; //数字范围a,b,生成的随机数c,num为猜测次数,guess用户猜测数字,g_num为猜测次数,第一次赋值后不变
     time_t sec;  //时间变量
     sec = time(NULL);  
     srand(((unsigned)sec));  //初始化随机数发生器

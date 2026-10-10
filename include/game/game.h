@@ -3,10 +3,10 @@
  * Copyright (C) 2026 wzm65535 <https://github.com/wzm65535>
  *
  * 本项目采用 WTFPL变体协议 开源。
- * 允许随意使用、修改、商用，但必须保留此版权声明及署名。
+ * 允许随意使用、修改、商用,但必须保留此版权声明及署名。
  * 详细条款见项目根目录 LICENSE 文件。
  */
-//包装游戏文件，防止主函数中调用一堆文件
+//包装游戏文件,防止主函数中调用一堆文件
 #include "guess.h"            //猜数字游戏
 #include "minesweeper.h"      //扫雷
 #include <windows.h>
