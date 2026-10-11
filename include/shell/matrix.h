@@ -9,11 +9,10 @@
 //输出一个矩阵,并对其进行行列处理,求和,转置操作
 #include <stdio.h>
 
-int find_number();
+int find_number(int num,int arr2[3][3]);
 
 int matrix()
 {
-    
     //定义二维数组(矩阵)
     int arr2[3][3]={
         {1,2,3}, //定义第0行里的数
