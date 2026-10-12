@@ -51,3 +51,5 @@
 突然发现升级完之后matrix.h疯狂报错,一会修了
 修复了find_number传入项设置不正确的Bug
 更新README.md
+2026-10-12
+练习程序调试,将原progress改名为log
