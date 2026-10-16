@@ -11,3 +11,4 @@
 #include "calc.h"     //对操作数ab进行五则运算
 #include "stats.h"    //对输入的正数进行均值,求和,最大值,最小值
 #include "matrix.h"   //输出一个矩阵,并对其进行行列处理,求和,转置操作
+#include "license.h"  //打印许可证

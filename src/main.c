@@ -74,6 +74,10 @@ int main()
         {
             matrix();
         }
+        else if(strcmp(command,"license") == 0)  //打印许可证
+        {
+            license();
+        }
         else //查不到
         {
             printf("输入错误!输入help指令以查看指令集\r\n\r\n");
