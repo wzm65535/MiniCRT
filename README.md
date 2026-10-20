@@ -3,7 +3,7 @@
 开源协议：采用 WTFPL 变体协议（允许随意使用/修改/商用）,使用或分发时须显著保留原作者署名及版权声明。
 
 ## 开发环境与语言标准
-使用VScode开发并调用gcc(v16.2.0)编译,采用C17标准
+使用VScode开发并调用gcc(v16.2.0)编译,采用C17标准,工具链来自mingw-bulids,包名称x86_64-16.2.0-release-posix-seh-ucrt-rt_v14-rev1.7z
 
 ## License & Attribution
 
