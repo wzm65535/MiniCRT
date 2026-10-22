@@ -5,6 +5,9 @@
 ## 开发环境与语言标准
 使用VScode开发并调用gcc(v16.2.0)编译,采用C17标准,工具链来自mingw-bulids,包名称x86_64-16.2.0-release-posix-seh-ucrt-rt_v14-rev1.7z
 
+## 环境要求
+目标计算机应具有UCRT及其它所需运行时
+
 ## License & Attribution
 
 本项目采用 **WTFPL变体** 协议。
