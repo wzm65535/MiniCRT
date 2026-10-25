@@ -53,3 +53,26 @@ int bit_count()  //数一个十进制整数的二进制形式里有几个1
     }
     printf("共有%d个1\r\n",count);
 }
+
+int bit_toggle()  //对一个十进制整数的二进制形式进行按位取反
+{
+    bits();
+    printf("T_BIN:");
+    for(unsigned char i = 0;i < 16;i++)
+    { 
+        if(i == 4 || i == 8 || i == 12)
+        {
+            printf(" ");
+        }
+        if(bin[i] == 0)  //如果当前位是0
+        {
+            bin[i] = 1;
+        }
+        else if(bin[i] == 1) //如果当前位是1
+        {
+            bin[i] = 0;
+        }
+        printf("%d",bin[i]);
+    }
+    printf("\r\n");
+}

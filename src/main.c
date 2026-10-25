@@ -78,10 +78,6 @@ int main()
         {
             license();
         }
-        else if(strcmp(command,"bit") == 0) //输入一个十进制数字,输出其二进制位
-        {
-            bits();
-        }
         else if(strcmp(command,"git-ver") == 0) //输出此程序上传时使用的git版本
         {
             printf("%s\r\n",git_ver);
@@ -90,9 +86,17 @@ int main()
         {
             printf("%s\r\n",gcc_ver);
         }
-        else if(strcmp(command,"bit-count") == 0) //数
+        else if(strcmp(command,"bit") == 0) //输入一个十进制数字,输出其二进制位
+        {
+            bits();
+        }
+        else if(strcmp(command,"bit-count") == 0) //数一个十进制整数的二进制形式里有几个1
         {   
             bit_count();
+        }
+        else if(strcmp(command,"bit-toggle") == 0)  //对一个十进制整数的二进制形式进行取反
+        {
+            bit_toggle();
         }
         else //查不到
         {
