@@ -26,7 +26,7 @@ start    显示启动界面\r\n\
 stats    对输入5个正数进行均值,求和,最大值,最小值\r\n\
 matrix   输出一个矩阵,并对其进行行列处理,求和,转置操作\r\n\
 license  打印许可证\r\n\
-bit      位操作\r\n\
+bit      输入十进制整数,对其进行位操作\r\n\
 gcc-ver  输出此程序编译时使用的gcc版本\r\n\
 git-ver  输出此程序上传时使用的git版本\r\n\
 "
