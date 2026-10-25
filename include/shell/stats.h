@@ -10,12 +10,12 @@
 #include <stdio.h>
 #include <windows.h>
 
-int arr[4]; 
-int sum = 0; //五个正数的和
-int avarage = 0; //五个正数的均值
-int max = 0; //五个正数的最大值
-int min = 0; //五个正数的最小值
-int temp; //排序过程中调换数组中项的临时变量
+static int arr[4]; 
+static int sum = 0; //五个正数的和
+static int avarage = 0; //五个正数的均值
+static int max = 0; //五个正数的最大值
+static int min = 0; //五个正数的最小值
+static int temp; //排序过程中调换数组中项的临时变量
 
 int stats()
 {

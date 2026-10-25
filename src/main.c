@@ -74,9 +74,21 @@ int main()
         {
             matrix();
         }
-        else if(strcmp(command,"license") == 0)  //打印许可证
+        else if(strcmp(command,"license") == 0) //打印许可证
         {
             license();
+        }
+        else if(strcmp(command,"bit") == 0) //位操作
+        {
+            bits();
+        }
+        else if(strcmp(command,"git-ver") == 0) //输出此程序上传时使用的git版本
+        {
+            printf("%s\r\n",git_ver);
+        }
+        else if(strcmp(command,"gcc-ver") == 0) //输出此程序编译时使用的gcc版本
+        {
+            printf("%s\r\n",gcc_ver);
         }
         else //查不到
         {

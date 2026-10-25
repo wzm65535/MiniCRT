@@ -31,7 +31,7 @@ int matrix()
     }
     //行列处理
     //进行第0行和第2行的转换
-    int temp = 0; //给数组操作留的临时变量
+    static int temp = 0; //给数组操作留的临时变量
     for(unsigned char i = 0;i < 3;i++)
     {
         temp = arr2[i][0];
