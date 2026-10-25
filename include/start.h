@@ -18,7 +18,7 @@ int start()
 {
     strcat(arr1,version);
     strcat(arr1,"] ");
-    strcat(arr1,"by wzm65535\r\n");
+    strcat(arr1,"by wzm65535");
 
     unsigned int a; //数组的元素数量
     a = (sizeof(arr1)/sizeof(arr1[1]));
@@ -31,7 +31,7 @@ int start()
         arr2[i] = '#';
     }
 
-    //演?多个字符从两端移动,向中间汇聚
+    //演示多个字符从两端移动,向中间汇聚
     for (unsigned char i = 0; i < (num/2); i++)
     {
         system("cls"); //清屏
@@ -39,5 +39,5 @@ int start()
         arr2[(num-i-2)] = arr1[(num-i-2)];
         printf("%s\r\n",arr2);
         Sleep(500);
-    }     
+    }   
 }

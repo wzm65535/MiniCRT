@@ -66,10 +66,6 @@ int main()
         {
             start();
         }
-        else if(strcmp(command,"stats") == 0) //对输入5个正数进行均值,求和,最大值,最小值
-        {
-            stats();
-        }
         else if(strcmp(command,"matrix") == 0) //输出一个矩阵,并对其进行行列处理,求和,转置操作
         {
             matrix();
@@ -89,6 +85,10 @@ int main()
         else if(strcmp(command,"bit") == 0) //输入一个十进制数字,输出其二进制位
         {
             bits();
+        }
+        else if(strcmp(command,"bit-set") == 0) //设置一个十进制整数的二进制形式的某个位
+        {   
+            bit_set();
         }
         else if(strcmp(command,"bit-count") == 0) //数一个十进制整数的二进制形式里有几个1
         {   
