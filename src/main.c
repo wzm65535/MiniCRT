@@ -78,7 +78,7 @@ int main()
         {
             license();
         }
-        else if(strcmp(command,"bit") == 0) //位操作
+        else if(strcmp(command,"bit") == 0) //输入一个十进制数字,输出其二进制位
         {
             bits();
         }
@@ -89,6 +89,10 @@ int main()
         else if(strcmp(command,"gcc-ver") == 0) //输出此程序编译时使用的gcc版本
         {
             printf("%s\r\n",gcc_ver);
+        }
+        else if(strcmp(command,"bit-count") == 0) //数
+        {   
+            bit_count();
         }
         else //查不到
         {

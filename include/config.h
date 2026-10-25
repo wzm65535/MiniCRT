@@ -14,21 +14,22 @@
 //指令集
 #define commands "\r\n\
 指令集:\r\n\
-help     查看帮助\r\n\
-ver      输出版本号\r\n\
-cls      清屏\r\n\
-echo     输出字符串\r\n\
-exit     退出程序\r\n\
-type     显示各种变量类型大小\r\n\
-calc     求操作数的五则运算值\r\n\
-game     游戏\r\n\
-start    显示启动界面\r\n\
-stats    对输入5个正数进行均值,求和,最大值,最小值\r\n\
-matrix   输出一个矩阵,并对其进行行列处理,求和,转置操作\r\n\
-license  打印许可证\r\n\
-bit      输入十进制整数,对其进行位操作\r\n\
-gcc-ver  输出此程序编译时使用的gcc版本\r\n\
-git-ver  输出此程序上传时使用的git版本\r\n\
+help        查看帮助\r\n\
+ver         输出版本号\r\n\
+cls         清屏\r\n\
+echo        输出字符串\r\n\
+exit        退出程序\r\n\
+type        显示各种变量类型大小\r\n\
+calc        求操作数的五则运算值\r\n\
+game        游戏\r\n\
+start       显示启动界面\r\n\
+stats       对输入5个正数进行均值,求和,最大值,最小值\r\n\
+matrix      输出一个矩阵,并对其进行行列处理,求和,转置操作\r\n\
+license     打印许可证\r\n\
+gcc-ver     输出此程序编译时使用的gcc版本\r\n\
+git-ver     输出此程序上传时使用的git版本\r\n\
+bit         输入十进制整数,输出其二进制位\r\n\
+bit-count   数一个十进制整数的二进制形式里有几个1\r\n\
 "
 
 
