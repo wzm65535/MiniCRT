@@ -137,11 +137,11 @@ int main()
     printf("C *= A 相当于 C = C * A\r\n");
     printf("C /= A 相当于 C = C / A\r\n");
     printf("C %%=A  相当于 C = C %% A\r\n");
-    printf("C =<<2 相当于 C = C << 2\r\n");
-    printf("C =>>2 相当于 C = C >> 2\r\n");
-    printf("C &= 2 相当于 C = C & 2\r\n");
-    printf("C |= 2 相当于 C = C | 2\r\n");
-    printf("C ^= 2 相当于 C = C ^ 2\r\n");
+    printf("C =<<2 相当于 C = C << 2\r\n");    //左移二位
+    printf("C =>>2 相当于 C = C >> 2\r\n");    //右移二位
+    printf("C &= 2 相当于 C = C & 2\r\n");     //按位与
+    printf("C |= 2 相当于 C = C | 2\r\n");     //按位或
+    printf("C ^= 2 相当于 C = C ^ 2\r\n");     //按位异或
    
     /*====================杂项运算符====================*/
     printf("\r\n");
