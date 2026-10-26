@@ -10,7 +10,7 @@
 //版本号
 #define version "v0.3.0"
 #define gcc_ver "gcc v16.2.0"
-#define git_ver "git version 2.56.0.windows.3"
+#define git_ver "git version 2.56.0.windows.4"
 //指令集
 #define commands "\r\n\
 指令集:\r\n\
