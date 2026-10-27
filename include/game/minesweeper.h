@@ -179,6 +179,11 @@ int FindMine()
         Print_Board();  //打印棋盘
         printf("请输入你要排查的坐标(x,y):");
         scanf("%d%*c%d",&find_x,&find_y);
+        if(find_x <= 0 || find_y <= 0 || find_x > 9 || find_y > 9)
+        {
+            printf("无效坐标!\r\n");
+            goto aaa;
+        }
         if(mine[find_x][find_y] == '1') //如果位置是雷,就爆炸游戏结束
         {
             system("cls");

@@ -8,7 +8,7 @@
  */
 /*=============配置文件=============*/
 //版本号
-#define version "v0.3.0"
+#define version "v0.3.1"
 #define gcc_ver "gcc v16.2.0"
 #define git_ver "git version 2.56.0.windows.4"
 //指令集
