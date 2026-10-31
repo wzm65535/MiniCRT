@@ -2,13 +2,13 @@
  * MiniCRT —— 一个以 DOS/CMD 风格 Shell 为交互入口、通过持续迭代学习 C 语言的工程实践项目
  * Copyright (C) 2026 wzm65535 <https://github.com/wzm65535>
  *
- * 本项目采用 WTFPL变体协议 开源。
+ * 本项目采用 MIT协议 开源。
  * 允许随意使用、修改、商用,但必须保留此版权声明及署名。
  * 详细条款见项目根目录 LICENSE 文件。
  */
 /*=============配置文件=============*/
 //版本号
-#define version "v0.3.1"
+#define version "v0.3.2"
 #define gcc_ver "gcc v16.2.0"
 #define git_ver "git version 2.56.0.windows.4"
 //指令集
