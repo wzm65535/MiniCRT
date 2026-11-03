@@ -12,3 +12,4 @@
 #include "matrix.h"              //输出一个矩阵,并对其进行行列处理,求和,转置操作
 #include "license.h"             //打印许可证
 #include "bits.h"                //位操作
+#include "mini_strlen.h"         //求字符串长度

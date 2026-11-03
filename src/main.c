@@ -98,6 +98,15 @@ int main()
         {
             bit_toggle();
         }
+        else if(strcmp(command,"strlen") == 0)  //求字符串长度
+        {
+            printf("请输入文本:");
+            char a[65535];
+            scanf("%s",&a);
+            unsigned int count = 0;  //字符数
+            count = mini_strlen(&a[0]);  //字符串第一个字符的存储地址
+            printf("共有%d字符\r\n",count);
+        }
         else //查不到
         {
             printf("输入错误!输入help指令以查看指令集\r\n\r\n");

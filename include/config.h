@@ -8,7 +8,7 @@
  */
 /*=============配置文件=============*/
 //版本号
-#define version "v0.3.2"
+#define version "v0.3.3"
 #define gcc_ver "gcc v16.2.0"
 #define git_ver "git version 2.56.0.windows.4"
 //指令集
@@ -31,6 +31,7 @@ bit         输入十进制整数,输出其二进制位\r\n\
 bit-set     设置一个十进制整数的二进制形式的某个位\r\n\
 bit-count   数一个十进制整数的二进制形式里有几个1\r\n\
 bit-toggle  对一个十进制整数的二进制形式进行按位取反\r\n\
+strlen      求字符串字符数\r\n\
 "
 
 
