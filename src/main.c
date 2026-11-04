@@ -102,7 +102,17 @@ int main()
         {
             printf("请输入文本:");
             char a[65535];
-            scanf("%s",&a);
+            char temp = ' '; //字符缓冲区
+            getchar();  //先吃掉空格
+            for(unsigned int i = 0;i < 65535;i++)
+            {
+                temp = getchar();
+                if(temp == EOF || temp == '\r' || temp == '\n')
+                {
+                    break;  //退出循环
+                }
+                a[i] = temp;  //读到的字符存入数组
+            }
             unsigned int count = 0;  //字符数
             count = mini_strlen(&a[0]);  //字符串第一个字符的存储地址
             printf("共有%d字符\r\n",count);
