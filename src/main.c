@@ -117,6 +117,10 @@ int main()
             count = mini_strlen(&a[0]);  //字符串第一个字符的存储地址
             printf("共有%d字符\r\n",count);
         }
+        else if(strcmp(command,"memory") == 0)  //输入一个整数,求这个整数存储的变量的地址(指针的值)和指针指向变量的值
+        {
+            memory();
+        }
         else //查不到
         {
             printf("输入错误!输入help指令以查看指令集\r\n\r\n");

@@ -13,3 +13,4 @@
 #include "license.h"             //打印许可证
 #include "bits.h"                //位操作
 #include "mini_strlen.h"         //求字符串长度
+#include "memory.h"              //输入一个整数,求这个整数存储的变量的地址(指针的值)和指针指向变量的值
