@@ -121,6 +121,10 @@ int main()
         {
             memory();
         }
+        else if(strcmp(command,"sort") == 0)  //对输入数进行排序
+        {
+            sort();
+        }
         else //查不到
         {
             printf("输入错误!输入help指令以查看指令集\r\n\r\n");

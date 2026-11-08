@@ -8,7 +8,7 @@
  */
 /*=============配置文件=============*/
 //版本号
-#define version "v0.3.5"
+#define version "v0.3.6"
 #define gcc_ver "gcc v16.2.0"
 #define git_ver "git version 2.56.0.windows.4"
 //指令集
@@ -20,7 +20,6 @@ cls         清屏\r\n\
 echo a      输出字符串a\r\n\
 exit        退出程序\r\n\
 type        显示各种变量类型大小\r\n\
-calc a b    求操作数ab的五则运算值\r\n\
 game        游戏\r\n\
 start       显示启动界面\r\n\
 matrix      输出一个矩阵,并对其进行行列处理,求和,转置操作\r\n\
@@ -33,6 +32,7 @@ bit-count   数一个十进制整数的二进制形式里有几个1\r\n\
 bit-toggle  对一个十进制整数的二进制形式进行按位取反\r\n\
 strlen      求字符串字符数\r\n\
 memory      输入一个整数,求这个整数存储的变量的地址(指针的值)和指针指向变量的值\r\n\
+sort        对输入数进行排序\r\n\
 "
 
 
