@@ -8,7 +8,7 @@
  */
 /*=============配置文件=============*/
 //版本号
-#define version "v0.3.6"
+#define version "v0.3.7"
 #define gcc_ver "gcc v16.2.0"
 #define git_ver "git version 2.56.1.windows.1"
 //指令集
@@ -33,6 +33,7 @@ bit-toggle  对一个十进制整数的二进制形式进行按位取反\r\n\
 strlen      求字符串字符数\r\n\
 memory      输入一个整数,求这个整数存储的变量的地址(指针的值)和指针指向变量的值\r\n\
 sort        对输入数进行排序\r\n\
+string      输入5个字符串,并将其及其的首字符换行打印出来\r\n\
 "
 
 

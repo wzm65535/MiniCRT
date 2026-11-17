@@ -125,6 +125,10 @@ int main()
         {
             sort();
         }
+        else if(strcmp(command,"string") == 0)  //输入多个字符串,并将其换行打印出来
+        {
+            string();
+        }
         else //查不到
         {
             printf("输入错误!输入help指令以查看指令集\r\n\r\n");
