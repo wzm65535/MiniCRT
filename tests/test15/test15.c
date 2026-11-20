@@ -6,7 +6,7 @@
  * 允许随意使用、修改、商用,但必须保留此版权声明及署名。
  * 详细条款见项目根目录 LICENSE 文件。
  */
-//函数指针及类型重命名测试
+//函数指针及类型重命名和函数指针数组测试
 #include <stdio.h>
 
 typedef unsigned int uint;
@@ -17,6 +17,12 @@ int Add(uint a,uint b)
     c = a + b;
     return c;
 }
+int Sub(uint a,uint b)
+{
+    int c = 0;
+    c = a - b;
+    return c;
+}
 
 int main()
 {
@@ -24,4 +30,6 @@ int main()
     printf("&Add = %p\r\n",&Add);  //打印Add函数的地址
     printf("*p   = %p\r\n",p);     //打印p的值
     printf("2+3  = %d\r\n",p(2,3));   //运用指向函数的指针实现调用函数
+    int (*parr[2]) (uint,uint) = {&Add,&Sub};  //函数指针数组
+    printf("3-2  = %d\r\n",((*parr[1])(3,2)));
 }
